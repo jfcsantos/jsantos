@@ -1,0 +1,3 @@
+[submodule "jfcsantos_node_server"]
+	path = jfcsantos_node_server
+	url = git@github.com:jfcsantos/jfcsantos_node_server.git
