@@ -53,17 +53,7 @@ height: 280px;
 position: relative;
 }
 
-h1{
-padding: 12px 70px 12px 20px;
-position: absolute;
-right: 0;
-text-align:left;
-top: 25%;
-float: left;
-color: #fff;
-letter-spacing: -1px;
-font-size: 38px;
-}
+h1{color: #fff;font-size: 38px;}
 
 h1 cufon{
 margin-bottom: -4px;
@@ -128,7 +118,7 @@ margin: 0;
 }
 
 
-ul.info li p.social a.tw{
+ a.tw{
 width: 28px;
 height: 28px;
 background: url(../images/social.png) left top no-repeat;
@@ -136,7 +126,7 @@ margin-right: 8px;
 float: left;
 }
 
-ul.info li p.social a.fb{
+ a.fb{
 width: 28px;
 height: 28px;
 background: url(../images/social.png) -36px top no-repeat;
@@ -144,28 +134,28 @@ float: left;
 margin-right: 8px;
 }
 
-ul.info li p.social a.li{
+ a.li{
 width: 28px;
 height: 28px;
 background: url(../images/social.png) -72px top no-repeat;
 float: left;
 }
 
-ul.info li p.social a.tw:hover{
+ a.tw:hover{
 width: 28px;
 height: 28px;
 background: url(../images/social.png) left bottom no-repeat;
 float: left;
 }
 
-ul.info li p.social a.fb:hover{
+ a.fb:hover{
 width: 28px;
 height: 28px;
 background: url(../images/social.png) -36px bottom no-repeat;
 float: left;
 }
 
-ul.info li p.social a.li:hover{
+ a.li:hover{
 width: 28px;
 height: 28px;
 background: url(../images/social.png) -72px bottom no-repeat;
@@ -218,4 +208,8 @@ margin-right: 5px;
 .email a:hover {
    opacity:0.8
 
+}
+
+.mainContent {
+    color: white;
 }
