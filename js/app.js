@@ -1,9 +1,9 @@
 var BioContent = React.createClass({displayName: 'BioContent',
   render: function() {
     return (
-      <div className="bioContent">
-        <h2>My bio.<br/><span>Meanwhile feel free to contact me in the social webz!</span></h2>
-
+      <div className="bioContent main-content-section">
+        <h1>My bio.</h1>
+        <br/><span>Meanwhile feel free to contact me in the social webz!</span>
         <ul className="info">
           <li><p className="email"><a href="mailto:jfs.santos.im@gmail.com">jfs.santos.im@gmail.com</a></p></li>
         </ul>
@@ -46,7 +46,7 @@ var WorkContent = React.createClass({displayName: 'WorkContent',
   },
   componentDidMount: function() {
     this.loadWorkListFromServer();
-    setInterval(this.loadWorkListFromServer, this.props.pollInterval);
+    // setInterval(this.loadWorkListFromServer, this.props.pollInterval);
   },
   render: function() {
     var data = this.state.data;
@@ -58,7 +58,7 @@ var WorkContent = React.createClass({displayName: 'WorkContent',
       );
     });
     return (
-      <div className="workContent">
+      <div className="workContent main-content-section">
         {workItems}
       </div>
     );
@@ -126,8 +126,8 @@ var MainContent = React.createClass({displayName: 'MainContent',
     return (
       <div className="mainContent">
         <BioContent />
-        <WorkContent url="api/worklist" />
-        <ContactForm url="api/contacts"  />
+        <WorkContent url="http://localhost:3000/api/worklist" />
+        <ContactForm url="http://localhost:3000/api/contacts"  />
       </div>
     );
   }
