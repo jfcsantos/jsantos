@@ -4,9 +4,8 @@
 <meta charset="utf-8" />
 <title>João Santos</title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" href="css/master.css" />
 <noscript>
-<link rel="stylesheet" href="css/mobile.min.css" />
+  <link rel="stylesheet" href="css/mobile.min.css" />
 </noscript>
 <script>
 // Edit to suit your needs.
@@ -33,31 +32,60 @@ var ADAPT_CONFIG = {
 };
 </script>
 <script src="js/adapt.min.js"></script>
-<link href="css/style.css" rel="stylesheet" type="text/css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="js/script.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-	<div class="main_wrapper">
-		<div class="content_home">
-			<div class="top-section link-nav container_16">
-				<div class="grid_2">
-					<label for="toggle-1"> Button </label>
-					<input type="checkbox" id="toggle-1">
-				</div>
-				<div class="grid_2">about</div>
+		<div class="inner-content-wrapper">
+			<div class="top-section link-nav ">
+				<div id="work-link" class="grid_2 clickable-div">work</div>
+				<div id="about-link" class="grid_2 clickable-div">about</div>
 			</div>
-			<div class="mid-section container_16">
-				<div class="name_title_row centered_div">
-					<h1>Joao Santos</h1>
-					<h2>Web Developer</h2>
-				</div>
+			<div class="mid-section container_12">
+        <div class="mid-section-wrapper">
+  				<div class="content-home content-div centered_div">
+    					<h1>Joao Santos</h1>
+    					<h2>Web Developer</h2>
+  				</div>
+          <div class="close-div hide-div clickable-div"><< back</div>
+          <div class="content-work content-div centered_div hide-div">
+            Work content
+          </div>
+          <div class="content-about content-div centered_div hide-div">
+            <h1>About Me</h1>
+            <div class="box-dim-70 box">
+              <div class="bio-wrapper">
+                <p>
+                  Web developer with a Computer Science academic background specializing
+                  in Drupal/PHP development. Broad personal and professional experience,
+                  with past projects ranging from personal websites, large eCommerce platforms
+                  and charity related websites, as well as small custom Drupal modules and
+                  server-side scripts. Experienced in building custom RESTful APIs, as well as i
+                  ntegrating with 3rd party services, such as Stripe, Embedly, Facebook ,
+                  among others. Comfortable working in large teams where fast-paced delivery is
+                  essential and SCRUM methodologies are used, as well as managing the whole
+                  development cycle of a project.
+                </p>
+              </div>
+              <div class="skills-wrapper">
+                Some skillz
+              </div>
+            </div>
+            <div class="box-dim-30 box">
+              Small photo
+            </div>
+          </div>
+        </div>
 			</div>
-			<div class="bottom-section link-nav container_16">
-				<div class="grid_2">FB</div>
-				<div class="grid_2">Twitter</div>
-				<div class="grid_2">LinkedIn</div>
+			<div class="bottom-section link-nav ">
+        <ul class="soc">
+          <li class="grid_2 clickable-div"><a class="soc-twitter" href="#"></a></li>
+          <li class="grid_2 clickable-div"><a class="soc-facebook" href="#"></a></li>
+          <li class="grid_2 clickable-div"><a class="soc-linkedin" href="#"></a></li>
+          <li class="grid_2 clickable-div"><a class="soc-email2 soc-icon-last" href="#"></a></li>
+      </ul>
 			</div>
 		</div>
-	</div>
 </body>
 </html>
