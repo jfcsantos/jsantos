@@ -118,11 +118,11 @@ code {
 
 @font-face {
     font-family: 'si';
-    src: url('/images/socicon/socicon.eot');
-    src: url('/images/socicon/socicon.eot?#iefix') format('embedded-opentype'),
-         url('/images/socicon/socicon.woff') format('woff'),
-         url('/images/socicon/socicon.ttf') format('truetype'),
-         url('/images/socicon/socicon.svg#icomoonregular') format('svg');
+    src: url('/images/social-icons/socicon.eot');
+    src: url('/images/social-icons/socicon.eot?#iefix') format('embedded-opentype'),
+         url('/images/social-icons/socicon.woff') format('woff'),
+         url('/images/social-icons/socicon.ttf') format('truetype'),
+         url('/images/social-icons/socicon.svg#icomoonregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -131,13 +131,14 @@ code {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     @font-face {
         font-family:si;
-        src: url(/images/socicon/socicon.svg) format(svg);
+        src: url(/images/social-icons/socicon.svg) format(svg);
     }
 }
 
 .soc {
     overflow:hidden;
-    margin:0; padding:0;
+    margin:0;
+    padding:0;
     list-style:none;
 }
 
@@ -228,7 +229,7 @@ body {padding:0;margin:0;background-color: #352b2b;}
 .link-nav {
     font-size: 20px;
     letter-spacing: 0.1em;
-    line-height: 100px;
+    line-height: 140px;
     width: 100%;
     left: 0px;
     position: absolute;
@@ -261,6 +262,7 @@ body {padding:0;margin:0;background-color: #352b2b;}
 .content-work h1 {
     text-align: left;
     font-size: 35px;
+    margin-bottom: 70px;
 }
 
 .top-section {top: 0px;}
@@ -276,14 +278,13 @@ body {padding:0;margin:0;background-color: #352b2b;}
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     height: 100%;
-    padding: 100px 0 70px 0;
+    padding: 140px 0 100px 0;
     overflow: hidden;
 }
 
 .bottom-section {
     bottom:0px;
-    height: 58px;
-    line-height: 0;
+    height: 100px;
 }
 
 
@@ -298,6 +299,72 @@ body {padding:0;margin:0;background-color: #352b2b;}
     font-size: 30px;
     bottom: 50px;
 }
+.clickable-div {
+    cursor: pointer;
+}
+
+.top-section .clickable-div:hover,
+.close-div:hover {
+  color: #989882;
+}
+
+.box-dim-70 {
+    float: left;
+    width: 69%;
+}
+
+.box-dim-30 {
+    float: left;
+    width: 30%;
+}
+
+.content-about {
+    height: 100%;
+}
+
+.bio-wrapper p {
+    text-align: left;
+    font-size: 0.8em;
+}
+
+.box {
+    height: 80%;
+}
+
+.photo-wrapper {
+    opacity: 0.5;
+    /* border: 2px solid; */
+    /* border-radius: 100px; */
+}
+
+.contacts-wrapper {margin-top: 40px;}
+
+.contacts-wrapper .grid_1 {
+    float: none;
+    display: inline-block;
+    height: 100%;
+}
+
+.contacts-wrapper .grid_1 li a.soc-icon-last {
+    margin-right: 0;
+}
+.photo-wrapper img {
+    max-width: 60%;
+    border-radius: 150px;
+}
+
+.bio-wrapper {
+    padding-right: 40px;
+}
+.bio-wrapper p {
+    margin-bottom: 0.5em;
+}
+
+.person-details {
+    font-size: .9em;
+    margin-bottom: 30px;
+}
+
 @media only screen
 and (min-device-width : 375px)
 and (max-device-width : 667px)
@@ -315,42 +382,32 @@ and (orientation : portrait) {
     .mid-section {
       padding: 150px 0 100px 0;
     }
-    .content-home h1 {
-      font-size: 2.5em;
+    .content-home h1,
+    .content-about h1,
+    .content-work h1 {
+      font-size: 3em;
     }
     .content-home h2 {
-      font-size: 0.8em;
+      font-size: 2em;
     }
-}
 
-.clickable-div {
-    cursor: pointer;
-}
+    .soc .grid_2 a {
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+      font-size: 30px;
+    }
+    .box-dim-70 {
+      float: none;
+      width: 100%;
+      height: auto;
+    }
+    .bio-wrapper {
+      padding-right: 0;
+      margin-bottom: 40px
+    }
+    .bio-wrapper p {
+      font-size: 1.3em;
+    }
 
-.top-section .clickable-div:hover,
-.close-div:hover {
-  color: #989882;
-}
-
-.box-dim-70 {
-    float: left;
-    width: 60%;
-}
-
-.box-dim-30 {
-    float: left;
-    width: 30%;
-}
-
-.content-about {
-    height: 100%;
-}
-
-.bio-wrapper p {
-    text-align: left;
-    font-size: smaller;
-}
-
-.box {
-    margin: 20px 0;
 }
