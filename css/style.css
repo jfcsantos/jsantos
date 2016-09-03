@@ -441,6 +441,10 @@ span.text-content {
   top: 0;
   width: 200px;
   opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
 }
 
 span.text-content span {
