@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8" />
-<title>João Santos</title>
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<noscript>
-  <link rel="stylesheet" href="css/mobile.min.css" />
-</noscript>
-<script>
-// Edit to suit your needs.
-var ADAPT_CONFIG = {
-  // Where is your CSS?
-  path: 'css/',
-
-  // false = Only run once, when page first loads.
-  // true = Change on window resize and page tilt.
-  dynamic: true,
-
-  // First range entry is the minimum.
-  // Last range entry is the maximum.
-  // Separate ranges by "to" keyword.
-  range: [
+  <head>
+    <meta charset="utf-8" />
+    <title>João Santos</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <noscript>
+    <link rel="stylesheet" href="css/mobile.min.css" />
+    </noscript>
+    <script>
+    // Edit to suit your needs.
+    var ADAPT_CONFIG = {
+    // Where is your CSS?
+    path: 'css/',
+    // false = Only run once, when page first loads.
+    // true = Change on window resize and page tilt.
+    dynamic: true,
+    // First range entry is the minimum.
+    // Last range entry is the maximum.
+    // Separate ranges by "to" keyword.
+    range: [
     '0px    to 760px  = mobile.min.css',
     '760px  to 980px  = 720.min.css',
     '980px  to 1280px = 960.min.css',
@@ -28,82 +26,109 @@ var ADAPT_CONFIG = {
     '1600px to 1940px = 1560.min.css',
     '1940px to 2540px = 1920.min.css',
     '2540px           = 2520.min.css'
-  ]
-};
-</script>
-<script src="js/adapt.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script src="js/script.js"></script>
-<link href="css/style.css" rel="stylesheet" type="text/css" />
-</head>
+    ]
+    };
+    </script>
+    <script src="js/adapt.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <header><div class="top-section link-nav ">
+    <div class="title-logo-wrapper grid_4">
+      <h1>Joao Santos</h1>
+    </div>
+    <div class="nav-menu-wrapper grid_4">
+      <div id="about-link" class="grid_2 clickable-div">about</div>
+      <div id="work-link" class="grid_2 clickable-div">work</div>
+    </div>
+  </div>
+</header>
 <body>
-		<div class="inner-content-wrapper">
-			<div class="top-section link-nav ">
-        <div id="about-link" class="grid_2 clickable-div">about</div>
-				<div id="work-link" class="grid_2 clickable-div">work</div>
-			</div>
-			<div class="mid-section container_12">
-        <div class="mid-section-wrapper">
-  				<div class="content-home content-div centered_div">
-    					<h1>Joao Santos</h1>
-    					<h2>Web Developer</h2>
-  				</div>
-          <div class="close-div hide-div clickable-div"><< back</div>
-          <div class="content-work content-div centered_div hide-div">
-            Work content
-          </div>
-          <div class="content-about content-div centered_div hide-div">
-            <h1>Who is Joao?</h1>
-            <div class="box-dim-70 box">
-              <div class="bio-wrapper box-inner">
-                <p>
-                  Web developer with a Computer Science academic background specializing
-                  in Drupal/PHP development.
-                </p>
-                <p>
-                  Broad personal and professional experience,
-                  with past projects ranging from personal websites, large eCommerce platforms
-                  and charity related websites, as well as small custom Drupal modules and
-                  server-side scripts.
-                </p>
-                <p>
-                  Experienced in building custom RESTful APIs, as well as i
-                  ntegrating with 3rd party services, such as Stripe, Embedly, Facebook ,
-                  among others. Comfortable working in large teams where fast-paced delivery is
-                  essential and SCRUM methodologies are used, as well as managing the whole
-                  development cycle of a project.
-                </p>
-              </div>
-            </div>
-            <div class="box-dim-30 box">
-              <div class="photo-wrapper box-inner">
-                <img src="/images/joao_santos.jpg" alt="Joao Santos">
-              </div>
-              <div class="contacts-wrapper box-inner">
-                <div class="person-details">
-                  Joao Santos
-                  <div class="job">Engineer / Developer</div>
-                </div>
-                <ul class="soc">
-                  <li class="grid_1 clickable-div"><a class="soc-twitter" href="#"></a></li>
-                  <li class="grid_1 clickable-div"><a class="soc-facebook" href="#"></a></li>
-                  <li class="grid_1 clickable-div"><a class="soc-linkedin" href="#"></a></li>
-                  <li class="grid_1 clickable-div"><a class="soc-email2 soc-icon-last" href="#"></a></li>
-                </ul>
-              </div>
-            </div>
-
+  <div class="inner-content-wrapper">
+    <div class="mid-section">
+      <div class="mid-section-wrapper">
+        <div class="content-home content-div centered_div">
+          <h2>Web Developer</h2>
+          <div class="bio-wrapper">
+            <p>
+              Web developer with a Computer Science academic background specializing
+              in Drupal/PHP development. Broad personal and professional experience,
+              with past projects ranging from personal websites, large eCommerce platforms
+              and charity related websites, as well as small custom Drupal modules and
+              server-side scripts.
+            </p>
           </div>
         </div>
-			</div>
-			<div class="bottom-section link-nav ">
-        <ul class="soc">
-          <li class="grid_2 clickable-div"><a class="soc-twitter" href="#"></a></li>
-          <li class="grid_2 clickable-div"><a class="soc-facebook" href="#"></a></li>
-          <li class="grid_2 clickable-div"><a class="soc-linkedin" href="#"></a></li>
-          <li class="grid_2 clickable-div"><a class="soc-email2 soc-icon-last" href="#"></a></li>
-        </ul>
-			</div>
-		</div>
+        <div class="content-home content-div centered_div portfolio-content-wrapper last">
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-item">
+              <img src="images/cruk-fundraise.png" alt="CRUK Fundraising"/>
+              <span class="text-content"><span>CRUK Fundraising</span></span>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-item">
+              <a href="portfolio/dec">
+                <img src="images/dec-org.png" alt="Disasters Emmergency Committee"/>
+              <span class="text-content"><span>Disasters Emmergency Committee</span></span>
+              </a>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-item">
+              <img src="images/moonjamaica.png" alt="Moon Jamaica"/>
+                <span class="text-content"><span>Moon Jamaica</span></span>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-item">
+              <img src="images/esn-lisboa.png" alt="ESN Lisboa"/>
+                <span class="text-content"><span>ESN Lisboa</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="close-div hide-div clickable-div"><< back</div>
+        <div class="content-work content-div centered_div hide-div">
+          Work content
+        </div>
+        <div class="content-about content-div centered_div hide-div">
+          <h1>About Me</h1>
+          <div class="box-dim-70 box">
+            <div class="bio-wrapper">
+              <p>
+                Web developer with a Computer Science academic background specializing
+                in Drupal/PHP development. Broad personal and professional experience,
+                with past projects ranging from personal websites, large eCommerce platforms
+                and charity related websites, as well as small custom Drupal modules and
+                server-side scripts. Experienced in building custom RESTful APIs, as well as i
+                ntegrating with 3rd party services, such as Stripe, Embedly, Facebook ,
+                among others. Comfortable working in large teams where fast-paced delivery is
+                essential and SCRUM methodologies are used, as well as managing the whole
+                development cycle of a project.
+              </p>
+            </div>
+            <div class="skills-wrapper">
+              Some skillz
+            </div>
+          </div>
+          <div class="box-dim-30 box">
+            Small photo
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
 </body>
+<footer>
+  <div class="bottom-section link-nav ">
+    <ul class="soc">
+      <li class="grid_2 clickable-div"><a class="soc-twitter" href="#"></a></li>
+      <li class="grid_2 clickable-div"><a class="soc-facebook" href="#"></a></li>
+      <li class="grid_2 clickable-div"><a class="soc-linkedin" href="#"></a></li>
+      <li class="grid_2 clickable-div"><a class="soc-email2 soc-icon-last" href="#"></a></li>
+    </ul>
+  </div>
+</footer>
 </html>
