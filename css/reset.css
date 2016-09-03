@@ -118,9 +118,7 @@ section {
 
   IE8 (and lower) requires a shiv:
   http://ejohn.org/blog/html5-shiv
-*/
-  display: block;
-}
+*/display: block;}
 
 b,
 strong {
