@@ -264,7 +264,8 @@ body {padding:0;margin:0;background-color: lightyellow;}
 }
 
 .content-home h2 {
-    font-size: 1em;
+    font-size: 1.1em;
+    text-align: left;
 }
 
 .content-about h1,
