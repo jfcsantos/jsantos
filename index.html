@@ -6,125 +6,151 @@
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script src="js/script.js"></script>
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
   <link href="css/style.css" rel="stylesheet" type="text/css">
-</head>
-<body><header><div class="top-section link-nav container">
-  <div class="title-logo-wrapper col-sm-4">
-    <h1>Joao Santos</h1>
-  </div>
-  <div class="nav-menu-wrapper col-sm-4">
-    <div id="about-link" class="col-xs-4 clickable-div">about</div>
-    <div id="work-link" class="col-xs-4 clickable-div">work</div>
-  </div>
-</div>
-</header>
+<style type="text/css"></style></head>
+<body>
+<header class=" bs-docs-nav">
+    <div class="site-title-wrapper text-center">
+         <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <h1 data-content-field="site-title" class="site-title">
+          
+          <div class="logo-image-title"><a href="/" class="home-link">Joao Santos</a></div>
+          
+          </h1>
+        </div>
+    <!--MAIN NAVIGATION-->
+    <nav class="main-nav collapse navbar-collapse bs-navbar-collapse container-fluid" role="navigation">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="#">about</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">portfolio+<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">CRUK fundraising</a></li>
+            <li><a href="#">Moon Jamaica</a></li>
+            <li><a href="#">DEC</a></li>
+            <li><a href="#">Theatre People</a></li>
+            <li><a href="#">ESN Lisboa</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
 <div class="inner-content-wrapper">
-<div class="mid-section container-fluid">
-  <div class="mid-section-wrapper">
-    <div class="content-home content-div centered_div">
-      <h2>Web Developer</h2>
-      <div class="bio-wrapper">
-        <p>
-          Web developer with a Computer Science academic background specializing
+  <div class="mid-section container-fluid">
+    <div class="mid-section-wrapper">
+      <div class="content-home content-div bio-content row">
+        <div class="bio-wrapper col-sm-8">
+          <h2>Web developer with a Computer Science academic background specializing
           in Drupal/PHP development. Broad personal and professional experience,
           with past projects ranging from personal websites, large eCommerce platforms
           and charity related websites, as well as small custom Drupal modules and
-          server-side scripts.
-        </p>
+          server-side scripts.</h2>
+        </div>
       </div>
-    </div>
-    <div class="content-home content-div centered_div portfolio-content-wrapper last">
-      <div class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
-        <div class="hovereffect">
-          <img class="img-responsive" src="images/cruk-fundraise.png" alt="CRUK Fundraising">
-          <div class="overlay">
-            <p>
-              <a href="#">CRUK Fundraising</a>
-            </p>
+      <div class="content-home content-div portfolio-content-wrapper row last">
+        <div class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="images/cruk-fundraise.png" alt="CRUK Fundraising">
+            <div class="overlay">
+              <p>
+                <a href="#">CRUK Fundraising</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="images/moonjamaica.png" alt="Moon Jamaica">
+            <div class="overlay">
+              <p>
+                <a href="#">Moon Jamaica</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="images/dec-org.png" alt="Disasters Emmergency Committee">
+            <div class="overlay">
+              <p>
+                <a href="#">Disasters Emmergency Committee</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="images/theatre-people.png" alt="Theatre People">
+            <div class="overlay">
+              <p>
+                <a href="#">Theatre People</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="images/esn-lisboa.png" alt="ESN Lisboa">
+            <div class="overlay">
+              <p>
+                <a href="#">ESN Lisboa</a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
-        <div class="hovereffect">
-          <img class="img-responsive" src="images/moonjamaica.png" alt="Moon Jamaica">
-          <div class="overlay">
+      <div class="close-div hide-div clickable-div">&lt;&lt; back</div>
+      <div class="content-work content-div centered_div hide-div">
+        Work content
+      </div>
+      <div class="content-about content-div centered_div hide-div">
+        <h1>About Me</h1>
+        <div class="box-dim-70 box">
+          <div class="bio-wrapper">
             <p>
-              <a href="#">Moon Jamaica</a>
+              Web developer with a Computer Science academic background specializing
+              in Drupal/PHP development. Broad personal and professional experience,
+              with past projects ranging from personal websites, large eCommerce platforms
+              and charity related websites, as well as small custom Drupal modules and
+              server-side scripts. Experienced in building custom RESTful APIs, as well as i
+              ntegrating with 3rd party services, such as Stripe, Embedly, Facebook ,
+              among others. Comfortable working in large teams where fast-paced delivery is
+              essential and SCRUM methodologies are used, as well as managing the whole
+              development cycle of a project.
             </p>
           </div>
-        </div>
-      </div>
-      <div class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
-        <div class="hovereffect">
-          <img class="img-responsive" src="images/dec-org.png" alt="Disasters Emmergency Committee">
-          <div class="overlay">
-            <p>
-              <a href="#">Disasters Emmergency Committee</a>
-            </p>
+          <div class="skills-wrapper">
+            Some skillz
           </div>
         </div>
-      </div>
-      <div class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
-        <div class="hovereffect">
-          <img class="img-responsive" src="images/theatre-people.png" alt="Theatre People">
-          <div class="overlay">
-            <p>
-              <a href="#">Theatre People</a>
-            </p>
-          </div>
+        <div class="box-dim-30 box">
+          Small photo
         </div>
-      </div>
-      <div class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
-        <div class="hovereffect">
-          <img class="img-responsive" src="images/esn-lisboa.png" alt="ESN Lisboa">
-          <div class="overlay">
-            <p>
-              <a href="#">ESN Lisboa</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="close-div hide-div clickable-div">&lt;&lt; back</div>
-    <div class="content-work content-div centered_div hide-div">
-      Work content
-    </div>
-    <div class="content-about content-div centered_div hide-div">
-      <h1>About Me</h1>
-      <div class="box-dim-70 box">
-        <div class="bio-wrapper">
-          <p>
-            Web developer with a Computer Science academic background specializing
-            in Drupal/PHP development. Broad personal and professional experience,
-            with past projects ranging from personal websites, large eCommerce platforms
-            and charity related websites, as well as small custom Drupal modules and
-            server-side scripts. Experienced in building custom RESTful APIs, as well as i
-            ntegrating with 3rd party services, such as Stripe, Embedly, Facebook ,
-            among others. Comfortable working in large teams where fast-paced delivery is
-            essential and SCRUM methodologies are used, as well as managing the whole
-            development cycle of a project.
-          </p>
-        </div>
-        <div class="skills-wrapper">
-          Some skillz
-        </div>
-      </div>
-      <div class="box-dim-30 box">
-        Small photo
       </div>
     </div>
   </div>
 </div>
-</div>
 <footer>
-<div class="bottom-section link-nav container-fluid">
-  <ul class="soc">
-    <li class="grid_2 clickable-div"><a class="soc-twitter" href="#"></a></li>
-    <li class="grid_2 clickable-div"><a class="soc-facebook" href="#"></a></li>
-    <li class="grid_2 clickable-div"><a class="soc-linkedin" href="#"></a></li>
-    <li class="grid_2 clickable-div"><a class="soc-email2 soc-icon-last" href="#"></a></li>
-  </ul>
-</div>
+  <div class="bottom-section link-nav container-fluid">
+    <ul class="soc">
+      <li class="grid_2 clickable-div"><a class="soc-twitter" href="#"></a></li>
+      <li class="grid_2 clickable-div"><a class="soc-facebook" href="#"></a></li>
+      <li class="grid_2 clickable-div"><a class="soc-linkedin" href="#"></a></li>
+      <li class="grid_2 clickable-div"><a class="soc-email2 soc-icon-last" href="#"></a></li>
+    </ul>
+  </div>
 </footer>
 </body></html>

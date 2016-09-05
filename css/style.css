@@ -14,7 +14,7 @@ body {
   flex-direction: column;
 }
 
-header{border-bottom: 1px solid;background-color: #352b2b;color: lightyellow;}
+header{/* border-bottom: 1px solid; */background-color: #2AA876;color: #484538;}
 footer{border-top: 1px solid;background-color: #352b2b;}
 
 h2,
@@ -191,7 +191,7 @@ code {
     -moz-border-radius: 100px;
     /* border-radius: 100px; */
     margin-right: 10px;
-    color: lightyellow;
+    color: white;
     /* background-color: #352b2b; */
 }
 
@@ -221,7 +221,7 @@ code {
 ----------------------------------------------------------------------------------------------------*/
 
 html,
-body {padding:0;margin:0;background-color: lightyellow;}
+body {padding:0;margin:0;/* background-color: lightyellow; */}
 .main_wrapper {
     height: 100%;
     min-height: 100%;
@@ -242,15 +242,23 @@ body {padding:0;margin:0;background-color: lightyellow;}
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    /* padding: 20px 50px; */
+    padding: 20px 100px;
     overflow: hidden;
-    height: 70px;
-    line-height: 70px;
+    /* height: 70px; */
+    /* line-height: 70px; */
 }
 
 .link-nav .grid_2 {
     /* float: none; */
     /* height: 100%; */
+}
+
+.nav-wrapper {
+    font-size: 1em;
+}
+
+.main-nav {
+    padding: 20px 100px;
 }
 
 .top-section .link-nav {
@@ -278,7 +286,7 @@ body {padding:0;margin:0;background-color: lightyellow;}
 
 .top-section {}
 .mid-section-wrapper {
-    height: 100%;
+    /* height: 100%; */
     /* display: flex; */
     /* align-items: center; */
 }
@@ -289,7 +297,7 @@ body {padding:0;margin:0;background-color: lightyellow;}
     -moz-box-sizing: border-box;
     /* box-sizing: border-box; */
     height: 100%;
-    padding: 20px 70px;
+    /* padding: 20px 70px; */
     /* overflow: hidden; */
     /* flex: 1; */
 }
@@ -303,7 +311,8 @@ body {padding:0;margin:0;background-color: lightyellow;}
 }
 
 .content-div {
-    border-bottom: 1px solid;
+    /* border-bottom: 1px solid; */
+    padding: 50px 100px;
 }
 
 .content-div.last {
@@ -367,6 +376,10 @@ and (orientation : portrait) {
 
 .content-about {
     height: 100%;
+}
+.bio-content {
+    background-color: #2AA876;
+    color: white;
 }
 
 .bio-wrapper p {
@@ -476,4 +489,31 @@ and (orientation : portrait) {
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
+
+
+
+
+
+.navbar-inverse { background-color: #222222}
+.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background-color: #}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: #080808}
+.dropdown-menu { background-color: #ffffff}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color: #428bca}
+.navbar-inverse { background-image: none; }
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-image: none; }
+.navbar-inverse { border-color: #080808}
+.navbar-inverse .navbar-brand { color: #999999}
+.navbar-inverse .navbar-brand:hover { color: #ffffff}
+.navbar-inverse .navbar-nav>li>a { color: #999999}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { color: #ffffff}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { color: #ffffff}
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { color: #ffffff}
+.dropdown-menu>li>a { color: #333333}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { color: #ffffff}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { border-top-color: #999999}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-top-color: #ffffff}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #999999}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #ffffff}
+
+
 
