@@ -24,6 +24,11 @@
     //     }
     // })
 
+    $(".navbar-toggle").click(function(e) {
+        e.preventDefault();
+        $(".body-wrapper").toggleClass("toggled");
+    });
+
     // Floating label headings for the contact form
     $(function() {
         $("body").on("input propertychange", ".floating-label-form-group", function(e) {
