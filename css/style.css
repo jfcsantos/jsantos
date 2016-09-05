@@ -42,7 +42,6 @@ hr.star-primary {
 }
 hr.star-light:after,
 hr.star-primary:after {
-  content: "\f005";
   font-family: FontAwesome;
   display: inline-block;
   position: relative;
@@ -73,7 +72,7 @@ header {
   color: white;
 }
 header .container {
-  padding-top: 70px;
+  padding-top: 50px;
   /*padding-bottom: 50px;*/
 }
 header img {
@@ -129,6 +128,9 @@ header .navbar-toggle:focus {
   font-weight: 700;
   border: none;
   display: inline-flex;
+  border-top: 1px solid;
+  margin: 0;
+  border-radius: 0;
 }
 .navbar-custom a:focus {
   outline: none;
@@ -142,19 +144,22 @@ header .navbar-toggle:focus {
 .navbar-custom .navbar-brand.active {
   color: white;
 }
+.navbar-custom .navbar-wrapper {
+  margin: 20px 0;
+}
 .navbar-custom .navbar-nav {
   letter-spacing: 1px;
 }
 .navbar-custom .navbar-nav li a {
   color: white;
 }
-.navbar-custom .navbar-nav li a:hover {
-  color: #18BC9C;
-  outline: none;
-}
 .navbar-custom .navbar-nav li a:focus,
 .navbar-custom .navbar-nav li a:active {
   color: white;
+}
+.navbar-custom .navbar-nav li a:hover {
+  color: #18BC9C;
+  background: white;
 }
 .navbar-custom .navbar-nav li.active a {
   color: white;
