@@ -76,7 +76,7 @@ header {
 	background: @theme-success;
 	color: white;
 	.container {
-		padding-top: 50px;
+		/*padding-top: 50px;*/
 		/*padding-bottom: 50px;*/
 	}
 	img {
@@ -105,9 +105,9 @@ header {
 	.navbar-toggle {
 		color: white;
 		text-transform: uppercase;
-		font-size: 10px;
-		border-color: white;
+		font-size: 20px;
 		float: left;
+		margin: 10px;
 		&:hover,
 		&:focus {
 			background-color: @theme-success;
@@ -120,6 +120,7 @@ header {
 @media(min-width:768px) {
 	header {
 		.container {
+			padding-top: 50px;
 			/*padding-top: 200px;
 			padding-bottom: 100px;*/
 		}
@@ -500,16 +501,16 @@ footer {
 }
 
 .body-wrapper.toggled {
-    padding-left: 250px;
+    padding-left: 350px;
 }
 
 .sidebar-wrapper {
     z-index: 1000;
     position: fixed;
-    left: 250px;
+    left: 350px;
     width: 0;
     height: 100%;
-    margin-left: -250px;
+    margin-left: -350px;
     overflow-y: auto;
     background: #000;
     -webkit-transition: all 0.5s ease;
@@ -519,12 +520,12 @@ footer {
 }
 
 .body-wrapper.toggled .sidebar-wrapper {
-    width: 250px;
+    width: 350px;
 }
 
 
 .body-wrapper.toggled .content-wrapper {
-    margin-right: -250px;
+    margin-right: -350px;
 }
 
 /* Sidebar Styles */
