@@ -4,6 +4,7 @@
 body {
 	font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	overflow-x: hidden;
+	letter-spacing: 1px;
 }
 
 p {
@@ -33,10 +34,10 @@ hr.star-light,
 hr.star-primary {
     padding: 0;
     border: none;
-    border-top: solid 5px;
-    text-align: center;
-    max-width: 250px;
-    margin: 25px auto 30px;
+    border-top: solid 4px;
+    text-align: left;
+    max-width: 150px;
+    margin: 10px 0 40px;
 }
 
 hr.star-light:after,
@@ -89,7 +90,7 @@ header {
 			font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 			text-transform: uppercase;
 			font-weight: 700;
-			font-size: 2em;
+			font-size: 2.3em;
 			a {
 		    color: white;
 			}
@@ -132,6 +133,18 @@ header {
 				font-size: 1.75em;
 			}
 		}
+
+	}
+}
+
+@media(max-width:767px) {
+    header button.navbar-toggle {
+	    padding-bottom: 0;
+	    padding-top: 0;
+	}
+
+	.header-inner-wrapper {
+	    padding-bottom: 40px;
 	}
 }
 
@@ -192,29 +205,18 @@ header {
 
 }
 
-@media(min-width:768px) {
+@media(max-width:767px) {
     .navbar-custom {
-        /*padding: 25px 0;*/
-        -webkit-transition: padding 0.3s;
-        -moz-transition: padding 0.3s;
-        transition: padding 0.3s;
-	    .navbar-brand {
-	        font-size: 2em;
-	        -webkit-transition: all 0.3s;
-	        -moz-transition: all 0.3s;
-	        transition: all 0.3s;
-	    }
+        display: none
     }
-    .navbar-custom.affix {
-        padding: 10px 0;
-		.navbar-brand {
-	        font-size: 1.5em;
-	    }
-	}
+    
+	.header-inner-wrapper {
+	    padding-bottom: 40px;
+	}	
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
     h2 {
     	margin: 0;
     	font-size: 3em;
@@ -228,7 +230,7 @@ section.success {
 
 @media(max-width:767px) {
 	section {
-		padding: 75px 0;
+		padding: 40px 0;
 	}
 	section.first {
 		padding-top: 75px;
@@ -237,13 +239,17 @@ section.success {
 
 #portfolio {
     .portfolio-item {
-        margin: 0 0 15px;
+        margin: 0 0 40px;
         right: 0;
+        text-align: center;
         .portfolio-link {
             display: block;
             position: relative;
-            max-width: 400px;
+            max-width: 350px;
             margin: 0 auto;
+            -webkit-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.44);
+		    -moz-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.44);
+		    box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.44);
             .caption {
                 background: fade(@theme-success, 90%);
                 position: absolute;
@@ -275,6 +281,12 @@ section.success {
                 }
             }
         }
+        .portfolio-item-title {
+		    font-size: 1.3em;
+		    font-weight: bold;
+		    margin: 15px 0;
+		    display: block;
+		}
     }
     * {
         z-index: 2;
