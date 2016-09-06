@@ -89,6 +89,9 @@ header .intro-text .name {
 header .intro-text .name a {
   color: white;
 }
+header .intro-text .name a:hover {
+  text-decoration: none;
+}
 header .intro-text .skills {
   font-size: 1.25em;
   font-weight: 300;
