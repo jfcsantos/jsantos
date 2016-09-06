@@ -495,9 +495,6 @@ fieldset[disabled] .btn-success.active {
   /*border-bottom: 1px solid lightgrey;*/
   margin-bottom: 50px;
 }
-.portfolio-modal .modal-content .project-intro {
-  border-right: 1px solid lightgrey;
-}
 .portfolio-modal .modal-content .modal-cover-img-wrapper {
   padding-bottom: 30px;
   border-bottom: 1px solid lightgrey;
@@ -509,8 +506,11 @@ fieldset[disabled] .btn-success.active {
   -moz-box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.44);
   box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.44);
 }
+.portfolio-modal .modal-content .project-intro-text {
+  margin-bottom: 40px;
+}
 .portfolio-modal .modal-content .item-details {
-  /*margin: 30px 0;*/
+  margin-bottom: 40px;
 }
 .portfolio-modal .close-modal {
   position: absolute;
