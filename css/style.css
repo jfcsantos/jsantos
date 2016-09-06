@@ -37,8 +37,7 @@ hr.star-primary {
   padding: 0;
   border: none;
   border-top: solid 4px;
-  text-align: left;
-  max-width: 150px;
+  max-width: 50px;
   margin: 10px 0 40px;
 }
 hr.star-light:after,
@@ -131,6 +130,10 @@ header .navbar-toggle:focus {
   .header-inner-wrapper {
     padding-bottom: 40px;
   }
+  hr.star-light,
+  hr.star-primary {
+    margin: 10px auto 40px;
+  }
 }
 .navbar-custom {
   background: #18BC9C;
@@ -197,6 +200,9 @@ section h2 {
   margin: 0;
   font-size: 3em;
 }
+section h4 {
+  margin: 30px 0 0px;
+}
 section.success {
   background: #18BC9C;
   color: white;
@@ -204,6 +210,9 @@ section.success {
 @media (max-width: 767px) {
   section {
     padding: 40px 0;
+  }
+  section h4 {
+    text-align: center;
   }
   section.first {
     padding-top: 75px;
