@@ -427,6 +427,27 @@ footer {
 	line-height: 45px;
 }
 
+.modal {
+	.social-wrapper .btn-social {
+		background-color: @theme-primary;
+	}
+	.contact-wrapper .contact-col {
+		background-color: @theme-success;
+	    height: 70px;
+	    line-height: 70px;
+	    color: white;
+	    font-weight: bold;
+	    font-size: 1.2em;
+    	&.contact-email {
+    		background-color: @theme-success-darker;
+    	}
+    	&:hover {
+    		background-color: @theme-success-darkest;
+    		text-decoration: none;
+	    }
+	}
+}
+
 .btn:focus,
 .btn:active,
 .btn.active {
@@ -482,6 +503,14 @@ footer {
 		    -webkit-box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.44);
 		    -moz-box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.44);
 		    box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.44);
+		}
+		.about-me-image img {
+		    max-height: 300px;
+		    margin: 0;
+		    width: 100%;
+		    -webkit-box-shadow: none;
+		    -moz-box-shadow: none;
+		    box-shadow: none;
 		}
 		.project-intro-text {
 		    margin-bottom: 40px;
@@ -553,7 +582,7 @@ footer {
     height: 100%;
     margin-left: -350px;
     overflow-y: auto;
-    background: #000;
+    background: @theme-success-darker;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -573,47 +602,41 @@ footer {
 
 .sidebar-nav {
     top: 0;
-    width: 250px;
+    width: 350px;
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-.sidebar-nav li {
-    text-indent: 20px;
-    line-height: 40px;
-}
-
-.sidebar-nav li a {
-    display: block;
-    text-decoration: none;
-    color: #999999;
-}
-
-.sidebar-nav li a:hover {
-    text-decoration: none;
-    color: #fff;
-    background: rgba(255,255,255,0.2);
-}
-
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-    text-decoration: none;
-}
-
-.sidebar-nav > .sidebar-brand {
-    height: 65px;
-    font-size: 18px;
-    line-height: 60px;
-}
-
-.sidebar-nav > .sidebar-brand a {
-    color: #999999;
-}
-
-.sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
-    background: none;
+    font-size: 1.2em;
+	li {
+	    text-indent: 20px;
+	    line-height: 50px;
+		a {
+		    display: block;
+		    text-decoration: none;
+		    color: white;
+		}
+		a:hover {
+		    text-decoration: none;
+		    color: #fff;
+		    background: rgba(255,255,255,0.2);
+		}
+		a:active,
+		a:focus {
+		    text-decoration: none;
+		}
+	}
+	> .sidebar-brand {
+	    height: 65px;
+	    font-size: 18px;
+	    line-height: 60px;
+	}
+	> .sidebar-brand a {
+	    color: #999999;
+	}
+	> .sidebar-brand a:hover {
+	    color: #fff;
+	    background: none;
+	}
 }
 
 @media(min-width:768px) {

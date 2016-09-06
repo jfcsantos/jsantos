@@ -452,6 +452,24 @@ fieldset[disabled] .btn-success.active {
   font-size: 20px;
   line-height: 45px;
 }
+.modal .social-wrapper .btn-social {
+  background-color: #2C3E50;
+}
+.modal .contact-wrapper .contact-col {
+  background-color: #18BC9C;
+  height: 70px;
+  line-height: 70px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.modal .contact-wrapper .contact-col.contact-email {
+  background-color: #16a085;
+}
+.modal .contact-wrapper .contact-col:hover {
+  background-color: #10866f;
+  text-decoration: none;
+}
 .btn:focus,
 .btn:active,
 .btn.active {
@@ -505,6 +523,14 @@ fieldset[disabled] .btn-success.active {
   -webkit-box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.44);
   -moz-box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.44);
   box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.44);
+}
+.portfolio-modal .modal-content .about-me-image img {
+  max-height: 300px;
+  margin: 0;
+  width: 100%;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 .portfolio-modal .modal-content .project-intro-text {
   margin-bottom: 40px;
@@ -570,7 +596,7 @@ fieldset[disabled] .btn-success.active {
   height: 100%;
   margin-left: -350px;
   overflow-y: auto;
-  background: #000;
+  background: #16a085;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -585,19 +611,20 @@ fieldset[disabled] .btn-success.active {
 /* Sidebar Styles */
 .sidebar-nav {
   top: 0;
-  width: 250px;
+  width: 350px;
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size: 1.2em;
 }
 .sidebar-nav li {
   text-indent: 20px;
-  line-height: 40px;
+  line-height: 50px;
 }
 .sidebar-nav li a {
   display: block;
   text-decoration: none;
-  color: #999999;
+  color: white;
 }
 .sidebar-nav li a:hover {
   text-decoration: none;
