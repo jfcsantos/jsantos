@@ -456,24 +456,6 @@ fieldset[disabled] .btn-success.active {
   font-size: 20px;
   line-height: 45px;
 }
-.modal .social-wrapper .btn-social {
-  background-color: #2C3E50;
-}
-.modal .contact-wrapper .contact-col {
-  background-color: #18BC9C;
-  height: 70px;
-  line-height: 70px;
-  color: white;
-  font-weight: bold;
-  font-size: 1.2em;
-}
-.modal .contact-wrapper .contact-col.contact-email {
-  background-color: #16a085;
-}
-.modal .contact-wrapper .contact-col:hover {
-  background-color: #10866f;
-  text-decoration: none;
-}
 .btn:focus,
 .btn:active,
 .btn.active {
@@ -511,35 +493,27 @@ fieldset[disabled] .btn-success.active {
   text-align: left;
   margin-bottom: 70px;
 }
-.portfolio-modal .modal-content .modal-project-details {
+.portfolio-modal .modal-project-details {
   text-align: left;
   padding-bottom: 20px;
   /*border-bottom: 1px solid lightgrey;*/
   margin-bottom: 50px;
 }
-.portfolio-modal .modal-content .modal-cover-img-wrapper {
+.portfolio-modal .modal-cover-img-wrapper {
   padding-bottom: 30px;
   border-bottom: 1px solid lightgrey;
   margin-bottom: 40px;
 }
-.portfolio-modal .modal-content img {
+.portfolio-modal img {
   margin: 0 auto;
   -webkit-box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.44);
   -moz-box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.44);
   box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.44);
 }
-.portfolio-modal .modal-content .about-me-image img {
-  /*max-height: 300px;*/
-  margin: 0;
-  width: 100%;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-.portfolio-modal .modal-content .project-intro-text {
+.portfolio-modal .project-intro-text {
   margin-bottom: 40px;
 }
-.portfolio-modal .modal-content .item-details {
+.portfolio-modal .item-details {
   margin-bottom: 40px;
 }
 .portfolio-modal .close-modal {
@@ -580,6 +554,48 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .modal-backdrop {
   opacity: 0;
   display: none;
+}
+.section-title {
+  margin-bottom: 50px;
+}
+.about-me {
+  margin-bottom: 70px;
+  margin-top: 20px;
+}
+.about-me .about-me-body {
+  margin: 0 15px;
+}
+.about-me .about-me-text {
+  margin-bottom: 40px;
+}
+.about-me .about-right-col {
+  text-align: center;
+}
+.about-me .social-wrapper .btn-social {
+  background-color: #2C3E50;
+}
+.about-me .contact-wrapper .contact-col {
+  background-color: #18BC9C;
+  height: 70px;
+  line-height: 70px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.about-me .contact-wrapper .contact-col.contact-email {
+  background-color: #16a085;
+}
+.about-me .contact-wrapper .contact-col:hover {
+  background-color: #10866f;
+  text-decoration: none;
+}
+.about-me .about-me-image img {
+  /*max-height: 300px;*/
+  margin: 0;
+  width: 100%;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 /* Toggle Styles */
 .body-wrapper {

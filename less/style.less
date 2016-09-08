@@ -195,7 +195,7 @@ header {
 					color: @theme-success;
 				    background: white;
 				}
-				
+
 			}
 			&.active {
 				a {
@@ -218,10 +218,10 @@ header {
     .navbar-custom {
         display: none
     }
-    
+
 	.header-inner-wrapper {
 	    padding-bottom: 40px;
-	}	
+	}
 }
 
 section {
@@ -431,27 +431,6 @@ footer {
 	line-height: 45px;
 }
 
-.modal {
-	.social-wrapper .btn-social {
-		background-color: @theme-primary;
-	}
-	.contact-wrapper .contact-col {
-		background-color: @theme-success;
-	    height: 70px;
-	    line-height: 70px;
-	    color: white;
-	    font-weight: bold;
-	    font-size: 1.2em;
-    	&.contact-email {
-    		background-color: @theme-success-darker;
-    	}
-    	&:hover {
-    		background-color: @theme-success-darkest;
-    		text-decoration: none;
-	    }
-	}
-}
-
 .btn:focus,
 .btn:active,
 .btn.active {
@@ -490,6 +469,7 @@ footer {
 	    .modal-title {
 		    text-align: left;
 		    margin-bottom: 70px;
+			}
 		}
 		.modal-project-details {
 		    text-align: left;
@@ -508,14 +488,6 @@ footer {
 		    -moz-box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.44);
 		    box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.44);
 		}
-		.about-me-image img {
-		    /*max-height: 300px;*/
-		    margin: 0;
-		    width: 100%;
-		    -webkit-box-shadow: none;
-		    -moz-box-shadow: none;
-		    box-shadow: none;
-		}
 		.project-intro-text {
 		    margin-bottom: 40px;
 		}
@@ -523,7 +495,6 @@ footer {
 		    margin-bottom: 40px;
 		}
 
-	}
     .close-modal {
         position: absolute;
         width:75px;
@@ -563,6 +534,50 @@ footer {
     	opacity: 0;
     	display: none;
     }
+}
+
+.section-title {
+  margin-bottom: 50px;
+}
+
+.about-me {
+	margin-bottom: 70px;
+	margin-top: 20px;
+	.about-me-body {
+    margin: 0 15px;
+	}
+	.about-me-text {
+		margin-bottom: 40px;
+	}
+	.about-right-col {
+		text-align: center;
+	}
+	.social-wrapper .btn-social {
+		background-color: @theme-primary;
+	}
+	.contact-wrapper .contact-col {
+		background-color: @theme-success;
+	    height: 70px;
+	    line-height: 70px;
+	    color: white;
+	    font-weight: bold;
+	    font-size: 1.2em;
+    	&.contact-email {
+    		background-color: @theme-success-darker;
+    	}
+    	&:hover {
+    		background-color: @theme-success-darkest;
+    		text-decoration: none;
+	    }
+	}
+	.about-me-image img {
+			/*max-height: 300px;*/
+			margin: 0;
+			width: 100%;
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+	}
 }
 
 /* Toggle Styles */
