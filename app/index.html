@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="yoAngularApp">
   <head>
     <meta charset="utf-8">
     <base href="/">
@@ -17,6 +17,7 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -28,13 +29,13 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-
-
   </head>
-  <body id="page-top" class="index body-wrapper" ng-app="yoAngularApp">
+  <body id="page-top" class="index body-wrapper"  ng-controller="MainController">
 
     <!--  Sidebar-->
-    <div ng-include='"views/sidebar.template.html"'></div>
+    <md-sidenav class="md-sidenav-left" md-component-id="left"
+                 md-whiteframe="4" ng-include='"views/sidebar.template.html"'></md-sidenav>
+    <!-- <div ng-include='"views/sidebar.template.html"'></div> -->
 
     <div class="content-wrapper">
         <!-- Header -->
@@ -64,6 +65,9 @@
         <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
         <script src="bower_components/angular-animate/angular-animate.js"></script>
         <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+        <script src="bower_components/angular-aria/angular-aria.js"></script>
+        <script src="bower_components/angular-messages/angular-messages.js"></script>
+        <script src="bower_components/angular-material/angular-material.js"></script>
         <script src="bower_components/angular-resource/angular-resource.js"></script>
         <script src="bower_components/angular-route/angular-route.js"></script>
         <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>

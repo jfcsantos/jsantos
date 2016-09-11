@@ -8,7 +8,7 @@
  * Controller of the yoAngularApp
  */
 angular.module('yoAngularApp')
-  .controller('AboutCtrl', function () {
+  .controller('AboutController', function () {
     // this.awesomeThings = [
     //   'HTML5 Boilerplate',
     //   'AngularJS',
