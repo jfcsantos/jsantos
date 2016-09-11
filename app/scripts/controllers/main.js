@@ -7,25 +7,25 @@
  * # MainCtrl
  * Controller of the yoAngularApp
  */
-angular.module('yoAngularApp', ['ngMaterial'])
-  .controller('MainController', ['$scope', '$mdSidenav', function ($scope, $mdSidenav) {
+angular.module('yoAngularApp')
+    .controller('MainController', ['$scope', '$mdSidenav', function ($scope, $mdSidenav) {
 
-    function buildToggler(componentId) {
-     return function() {
-       $mdSidenav(componentId).toggle();
-     };
-    }
+      function buildToggler(componentId) {
+       return function() {
+         $mdSidenav(componentId).toggle();
+       };
+      }
 
-    $scope.toggleLeft = buildToggler('left');
-    $scope.toggleRight = buildToggler('right');
+      $scope.toggleLeft = buildToggler('left');
+      $scope.toggleRight = buildToggler('right');
 
-    if($scope.isSidebar === true) {
-     $scope.navClasses = {ul: "nav navbar-nav"};
-    }
-    else {
-     $scope.navClasses = {
-       ul: "sidebar-nav",
-       li: "page-scroll"
-     };
-    }
-  }]);
+      if($scope.isSidebar === true) {
+       $scope.navClasses = {ul: 'nav navbar-nav'};
+      }
+      else {
+       $scope.navClasses = {
+         ul: 'sidebar-nav',
+         li: 'page-scroll'
+       };
+      }
+    }]);

@@ -15,18 +15,19 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ngMaterial'
   ])
   .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $locationProvider.hashPrefix('!');
     $routeProvider
       .when('/', {
-        templateUrl: '/views/portfolio.template.html',
+        templateUrl: 'views/portfolio.template.html',
         controller: 'MainController',
         controllerAs: 'main'
       })
       .when('/about', {
-        templateUrl: '/views/about.template.html',
+        templateUrl: 'views/about.template.html',
         controller: 'AboutController',
         controllerAs: 'about'
       })
@@ -34,4 +35,5 @@ angular
         redirectTo: '/'
       });
       $locationProvider.html5Mode(true);
+
   }]);
