@@ -18,7 +18,7 @@ angular
     'ngMaterial'
   ])
   .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
-    $locationProvider.hashPrefix('!');
+    // $locationProvider.hashPrefix('!');
     $routeProvider
       .when('/', {
         templateUrl: 'views/portfolio.template.html',
@@ -33,6 +33,6 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-      $locationProvider.html5Mode(true);
+      // $locationProvider.html5Mode(true);
 
   }]);
