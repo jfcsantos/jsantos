@@ -3,4 +3,12 @@ node_modules/*
 bower_components
 dist/
 dist/*
+css/
+css/*
+js/
+js/*
+less/
+less/*
+test/
+test/*
 .tmp
