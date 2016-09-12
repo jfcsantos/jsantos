@@ -76,7 +76,7 @@ module.exports = function (grunt) {
       },
       pages: {
         options: {
-          remote: 'git@github.com:jfcsantos/jfcsantos.git',
+          remote: 'git@github.com:jfcsantos/jsantos-site.git',
           branch: 'gh-pages'
         }
       },
@@ -395,7 +395,8 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             '*.html',
             'images/{,*/}*.{webp}',
-            'styles/fonts/{,*/}*.*'
+            'styles/fonts/{,*/}*.*',
+            'assets/*'
           ]
         }, {
           expand: true,
