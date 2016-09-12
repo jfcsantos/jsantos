@@ -1,7 +1,7 @@
 <div class="container header-inner-wrapper">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header page-scroll">
-    <button type="button" class="navbar-toggle" ng-click="toggleLeft()">
+    <button type="button" id="navbar-toggle" class="navbar-toggle" ng-click="toggleLeft()">
     <span class="sr-only">Toggle navigation</span>  <i class="fa fa-bars"></i>
     </button>
   </div>
@@ -17,9 +17,12 @@
     </div>
   </div>
   <!-- Navigation -->
-  <nav id="mainNav" class="navbar navbar-default navbar-custom">
+  <nav id="mainNav" class="navbar navbar-default navbar-custom"
+  >
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse navbar-wrapper">
+    <my-nav-menu is-sidebar="false" class="collapse navbar-collapse navbar-wrapper"></my-nav-menu>
+
+    <!-- <div class="collapse navbar-collapse navbar-wrapper">
       <ul class="nav navbar-nav">
         <li>
           <a href="/">Home</a>
@@ -31,7 +34,7 @@
           <a href="about">About Me</a>
         </li>
       </ul>
-    </div>
+    </div> -->
     <!-- /.navbar-collapse -->
   </nav>
 </div>

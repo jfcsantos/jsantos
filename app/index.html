@@ -30,20 +30,20 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
   </head>
-  <body id="page-top" class="index body-wrapper"  ng-controller="MainController">
+  <body id="page-top" class="index body-wrapper" ng-controller="MainController" ng-cloak>
 
     <!--  Sidebar-->
-    <md-sidenav class="md-sidenav-left" md-component-id="left"
-                 md-whiteframe="4" ng-include='"views/sidebar.template.html"'></md-sidenav>
-    <!-- <div ng-include='"views/sidebar.template.html"'></div> -->
+    <md-sidenav class="md-sidenav-left"
+                md-component-id="left"
+                 md-whiteframe="4">
+         <my-nav-menu is-sidebar="true" class="sidebar-wrapper"></my-nav-menu>
 
+     </md-sidenav>
     <div class="content-wrapper">
         <!-- Header -->
         <header ng-include='"views/header.template.html"'></header>
         <!-- Portfolio Grid Section -->
         <div ng-view></div>
-
-        <div ng-include='"views/portfolio.template.html"'></div>
 
         <!-- Footer -->
         <footer class="text-center" ng-include='"views/footer.template.html"'></footer>

@@ -9,23 +9,30 @@
  */
 angular.module('yoAngularApp')
     .controller('MainController', ['$scope', '$mdSidenav', function ($scope, $mdSidenav) {
-
       function buildToggler(componentId) {
        return function() {
          $mdSidenav(componentId).toggle();
        };
       }
-
       $scope.toggleLeft = buildToggler('left');
-      $scope.toggleRight = buildToggler('right');
 
-      if($scope.isSidebar === true) {
-       $scope.navClasses = {ul: 'nav navbar-nav'};
-      }
-      else {
-       $scope.navClasses = {
-         ul: 'sidebar-nav',
-         li: 'page-scroll'
-       };
-      }
-    }]);
+    }])
+    .directive('myNavMenu', function() {
+      return {
+        replace: true,
+        restrict: 'E',
+        scope: {
+            isSidebar: '@',
+        },
+        templateUrl: 'views/sidebar.template.html',
+        link: function (scope, element, attributes) {
+            // var el = angular.element(element);
+            var button = angular.element('#navbar-toggle');
+            var navLink = angular.element('.sidebar-nav a');
+            navLink.on('click', function(){
+               // Actions after the file is selected
+               button.click();
+            });
+        }
+      };
+    });

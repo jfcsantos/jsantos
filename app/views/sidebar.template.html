@@ -1,10 +1,11 @@
-<div class="sidebar-wrapper">
-  <ul class="sidebar-nav">
-    <li class="page-scroll">
-      <a href="#portfolio">Work</a>
+<ul ng-class="isSidebar === 'true' ? 'sidebar-nav' : ['nav', 'navbar-nav']">
+    <li ng-class="isSidebar === 'true' ? 'page-scroll' : '' ">
+      <a href="/">Home</a>
     </li>
-    <li class="page-scroll">
-      <a href="#about" data-toggle="modal">About Me</a>
+    <li ng-class="isSidebar === 'true' ? 'page-scroll' : '' ">
+      <a href="/#portfolio">Work</a>
     </li>
-  </ul>
-</div>
+    <li ng-class="isSidebar === 'true' ? 'page-scroll' : '' ">
+      <a href="about">About Me</a>
+    </li>
+</ul>
