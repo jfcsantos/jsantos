@@ -35,4 +35,19 @@ angular.module('yoAngularApp')
             });
         }
       };
+    })
+    .directive('scrollToItem', function() {
+      return {
+          restrict: 'A',
+          scope: {
+              scrollTo: "@"
+          },
+          link: function(scope, element, attr) {
+
+              element.on('click', function() {
+                  var bodyElem = angular.element("body");
+                  angular.element(bodyElem).animate({scrollTop: element.offset().top}, "fast");
+              });
+          }
+      };
     });
