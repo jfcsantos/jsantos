@@ -13,31 +13,9 @@ angular.module('portfolioList', ['common.portfolio', 'ngMaterial'])
           return $scope.workId;
         };
 
-        $scope.showDialog = function(ev, modalDiv) {
-          console.log('#' + modalDiv);
-          $mdDialog.show({
-            controller: DialogController,
-            contentElement: '#' + modalDiv,
-            parent: angular.element(document.body),
-            targetEvent: ev,
-            clickOutsideToClose: true,
-            fullscreen: true
-          });
-        };
 
-        function DialogController($scope, $mdDialog) {
-          $scope.hide = function() {
-            $mdDialog.hide();
-          };
-
-          $scope.cancel = function() {
-            $mdDialog.cancel();
-          };
-
-          $scope.answer = function(answer) {
-            $mdDialog.hide(answer);
-          };
-        }
     }
-  ]
+  ],
+  controllerAs: 'portfolioList'
+
 });

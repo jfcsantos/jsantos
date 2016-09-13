@@ -16,6 +16,7 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngMaterial',
+    'ui.bootstrap',
     'portfolioList'
   ])
   .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {

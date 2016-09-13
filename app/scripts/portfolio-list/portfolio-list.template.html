@@ -1,31 +1,20 @@
-<div ng-repeat="work in portfolio"
-      ng-init="workId=getWorkId()"
-      class="col-sm-4 portfolio-item"  >
-    <a href="#portfolioModal{{workId}}" class="portfolio-link row" data-toggle="modal">
-        <div class="caption">
-            <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-            </div>
-        </div>
-        <img ng-src="{{work.imageUrl}}" class="img-responsive" alt="{{work.name}}"/>
-    </a>
-    <a href="#/" title="{{work.name}}" class="portfolio-item-title row"
-        ng-click="showDialog($event, 'portfolioModal' + workId)">{{work.name}}</a>
-</div>
-
-<div style="visibility: hidden">
-    <div class="md-dialog-container" id="portfolioModal1">
-      <md-dialog>
-            <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                <div class="rl">
-                </div>
+<div  ng-repeat="work in portfolio"
+      class="col-sm-4 portfolio-item">
+  <div ng-controller="ModalDemoCtrl as modal">
+    <script type="text/ng-template" id="myModalContent.html" >
+        <!-- Portfolio Modals -->
+        <div class="container portfolio-modal">
+          <div class="close-modal"  ng-click="modalContent.dismiss()">
+            <div class="lr">
+              <div class="rl">
               </div>
             </div>
+          </div>
+          <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
               <div class="modal-body">
                 <div class="modal-title">
-                  <h2>CRUK Fundraising Platform</h2>
+                  <h2>{{modalContent.work.name}}</h2>
                   <div>fundraise, charity, Drupal, PHP</div>
                 </div>
                 <div class="project-intro-text text-left">
@@ -57,9 +46,21 @@
                     <p>Besides the ability to personalize the page, the main feature built is the Donation feed. This list of past donations and messages left by contributors is part of the integration with CRUK's donation and payment processing services.</p>
                   </div>
                 </div>
-                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
               </div>
             </div>
-      </md-dialog>
-    </div>
+          </div>
+        </div>
+    </script>
+
+    <a href="#/" class="portfolio-link row" ng-click="modal.openComponentModal()">
+        <div class="caption">
+            <div class="caption-content">
+                <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+        </div>
+        <img ng-src="{{work.imageUrl}}" class="img-responsive" alt="{{work.name}}"/>
+    </a>
+    <a href="#/" title="{{work.name}}" class="portfolio-item-title row"
+        ng-click="modal.openComponentModal()">{{work.name}}</a>
   </div>
+</div>
