@@ -546,6 +546,12 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .item-details {
   margin-bottom: 40px;
 }
+.portfolio-modal .item-details span.item-title {
+    padding-right: 5px;
+}
+.portfolio-modal .item-details li {
+  display: list-item;
+}
 .portfolio-modal .close-modal {
   position: absolute;
   width: 75px;

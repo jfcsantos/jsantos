@@ -3,36 +3,138 @@
         "id": "cruk-fundraise",
         "imageUrl": "images/portfolio/cruk-fundraise.png",
         "name": "CRUK Fundraising",
-        "snippet": "The new fundraising platform created in-house by Cancer Research UK aims to provide a seamless, free and enjoyable way of creating Fundraising Pages."
+        "title": "CRUK Fundraising Platform",
+        "categories": "fundraise, charity, Drupal, PHP",
+        "introText": "<p>The new fundraising platform created in-house by Cancer Research UK aims to provide a seamless, free and enjoyable way of creating <a href='https://fundraise.cancerresearchuk.org/e-lions' target='_blank'>Fundraising Pages</a>.</p>",
+        "description": "<p>Together with the digital team at CRUK, I led the development of this Drupal based project. The platform uses a mix of both Drupal 7 with custom built Symphony Web Services serving the required contents and assets to the user.</p><p>Besides the ability to personalize the page, the main feature built is the Donation feed. This list of past donations and messages left by contributors is part of the integration with CRUK's donation and payment processing services.</p>",
+        "itemDetails": {
+          "client": {
+            "title": "Client",
+            "content": "Cancer Research UK"
+          },
+          "website": {
+            "title": "Website",
+            "content": "<a href='https://fundraise.cancerresearchuk.org/' target='_blank'>fundraise.cancerresearchuk.org</a>"
+          },
+          "date": {
+            "title": "Date",
+            "content": "June 2016"
+          }
+        }
     },
     {
         "id": "dec-org",
         "imageUrl": "images/portfolio/dec-org.png",
         "name": "Disasters Emergency Committee",
-        "snippet": "The Moon Jamaica website started as a digital version of it's older brother, the Moon Jamaica guide book, as a way to easily keep the contents up-to-date and provide a pleasant experience for the users. It is also a booking website, listing all the hotels, rental car and events available in the guide book."
+        "title": "Disasters Emergency Committee",
+        "categories": "fundraise, charity, Drupal, PHP, Stripe, Embedly",
+        "introText": "<p>The DEC – Disasters Emergency Committee – brings together 13 leading UK aid agencies to raise money at times of humanitarian crisis in poorer countries. By working together we can raise more money to save lives and rebuild shattered communities.</p>",
+        "description": "<p>Helped build and deploy the new DEC website, a mobile-friendly project focused on raising awareness for worldwide crisis appeals with a clean design and customized donation process.</p><p>Implemented a content feed for the Appeal pages using <a href='http://embed.ly/' target='_blank'>Embed.ly</a>, fetching relevant content from several sources including Twitter, Facebook and YouTube. Also created a custom Donation workflow integrating <a href='https://stripe.com/' target='_blank'>Stripe's</a> API for payment processing.</p>",
+        "itemDetails": {
+          "client": {
+            "title": "Client",
+            "content": "Disasters Emergency Committee"
+          },
+          "website": {
+            "title": "Website",
+            "content": "<a href='http://www.dec.org.uk/' target='_blank'>DEC.org.uk</a>"
+          },
+          "date": {
+            "title": "Date",
+            "content": "September 2015"
+          }
+        }
     },
     {
         "id": "theatre-people",
         "imageUrl": "images/portfolio/theatre-people.png",
         "name": "Theatre People",
-        "snippet": "The Moon Jamaica website started as a digital version of it's older brother, the Moon Jamaica guide book, as a way to easily keep the contents up-to-date and provide a pleasant experience for the users. It is also a booking website, listing all the hotels, rental car and events available in the guide book."
+        "title": "Theatre People",
+        "categories": "eCommerce, Bookings, Drupal, PHP, Python",
+        "introText": "<p>The main website of one of the biggest and most experienced theatre ticket provider in London, <a href='http://www.theatrepeople.com/' target='_blank'>TheatrePeople.com</a> handles a huge amount of traffic and bookings with an all in-house solution.</p>",
+        "description": "<p>As part of the Drupal development team at <a href='http://www.encoretickets.co.uk/' target='_blank'>Encore Tickets</a>, I was responsible for implementing new features, custom-built A/B test scenarios as well as maintenance and improvements to existing code.</p><p>With optimization in mind and in order to always have the most up-to-date ticket and show availability, I built a small Python service to provide multi-threading on custom inter-dependent Drupal cron jobs which ran every night. - <a href='https://github.com/jfcsantos/python-threads' target='_blank'>Overnight Updates</a></p>",
+        "itemDetails": {
+          "client": {
+            "title": "Client",
+            "content": "Encore Tickets Ltd"
+          },
+          "website": {
+            "title": "Website",
+            "content": "<a href='http://www.theatrepeople.com/' target='_blank'>TheatrePeople.com</a>"
+          },
+          "date": {
+            "title": "Date",
+            "content": "June 2014"
+          }
+        }
     },
     {
         "id": "moon-jamaica",
         "imageUrl": "images/portfolio/moonjamaica.png",
         "name": "Moon Jamaica",
-        "snippet": "The Moon Jamaica website started as a digital version of it's older brother, the Moon Jamaica guide book, as a way to easily keep the contents up-to-date and provide a pleasant experience for the users. It is also a booking website, listing all the hotels, rental car and events available in the guide book."
+        "title": "Moon Jamaica",
+        "categories": "Commerce, Drupal, PHP",
+        "introText": "<p>The Moon Jamaica website started as a digital version of it's older brother, the Moon Jamaica guide book, as a way to easily keep the contents up-to-date and provide a pleasant experience for the users. It is also a booking website, listing all the hotels, rental car and events available in the guide book.</p>",
+        "description": "<p>This website was built using Drupal with the Commerce modules to habdle all the booking and store functionalities. Working as a consultant, I am trying to recreate and optimise the most important features built in the site, as well as improving the user experience of the overall website.</p>",
+        "itemDetails": {
+          "client": {
+            "title": "Client",
+            "content": "Moon Jamaica"
+          },
+          "website": {
+            "title": "Website",
+            "content": "<a href='https://www.moonjamaica.com/' target='_blank'>MoonJamaica.com</a>"
+          },
+          "date": {
+            "title": "Date",
+            "content": "August 2016"
+          }
+        }
     },
     {
         "id": "esn-lisboa",
         "imageUrl": "images/portfolio/esn-lisboa.png",
         "name": "ESN Lisboa",
-        "snippet": "The Moon Jamaica website started as a digital version of it's older brother, the Moon Jamaica guide book, as a way to easily keep the contents up-to-date and provide a pleasant experience for the users. It is also a booking website, listing all the hotels, rental car and events available in the guide book."
+        "title": "ESN Lisboa",
+        "categories": "Drupal, PHP, Volunteering, NPO",
+        "introText": "<p>ESN Lisboa is the Lisbon section of the Erasmus Student Network. It is a non-profit organization born in September 2008 by the hand of a small group of Portuguese Erasmus students that had just come from their Erasmus.</p>",
+        "description": "<p>As a volunteer member of the organisation I was responsable for the maintenance of the ESN Lisboa website. <a href='http://esn.org/' target='_blank'>ESN Satellite</a> is a website template for all ESN sections and projects based on Drupal 7 which has volunteer members contributing to it's constant development and improvement.</p>",
+        "itemDetails": {
+          "client": {
+            "title": "Client",
+            "content": "ESN Lisboa"
+          },
+          "website": {
+            "title": "Website",
+            "content": "<a href='esnlisboa.org' target='_blank'>ESN Lisboa</a>"
+          },
+          "date": {
+            "title": "Date",
+            "content": "September 2012"
+          }
+        }
     },
     {
         "id": "tkb-fct",
         "imageUrl": "images/portfolio/tkb-fct.png",
         "name": "TKB FCT",
-        "snippet": "The Moon Jamaica website started as a digital version of it's older brother, the Moon Jamaica guide book, as a way to easily keep the contents up-to-date and provide a pleasant experience for the users. It is also a booking website, listing all the hotels, rental car and events available in the guide book."
+        "title": "TKB Multimedia Archive",
+        "categories": "Drupal, PHP, D3.js",
+        "introText": "<p>As part of my Computer Science master thesis I worked on the TKB project - A Transmedia Knowledge Base for Perfoming Arts. This was part of a long, multi-faceted project, focused on video annotation and the creation of a platform where artists could easily store multimedia content and connect to others.</p>",
+        "description": "<p>The archive was created with the purpose of clearly displaying the connections between each artist and their content. With this in mind, I've abstracted most of the Drupal content views and used the <a href='https://d3js.org/' target='_blank'>D3.js</a> library for data visualization.</p><p>The result was a platform where all the content and users where connected in a graph-like display, related via categories, tag words or field of studies.</p>",
+        "itemDetails": {
+          "client": {
+            "title": "Client",
+            "content": "FCT UNL"
+          },
+          "website": {
+            "title": "Website",
+            "content": "<a href='https://tkb.fcsh.unl.pt/' target='_blank'>TKB Multimedia Archive</a>"
+          },
+          "date": {
+            "title": "Date",
+            "content": "July September 2012"
+          }
+        }
     }
 ]
