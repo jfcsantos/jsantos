@@ -28,7 +28,7 @@
         "name": "Disasters Emergency Committee",
         "title": "Disasters Emergency Committee",
         "categories": "fundraise, charity, Drupal, PHP, Stripe, Embedly",
-        "introText": "<p>The DEC – Disasters Emergency Committee – brings together 13 leading UK aid agencies to raise money at times of humanitarian crisis in poorer countries. By working together we can raise more money to save lives and rebuild shattered communities.</p>",
+        "introText": "<p>The Disasters Emergency Committee brings together 13 leading UK aid agencies to raise money at times of humanitarian crisis in poorer countries. By working together we can raise more money to save lives and rebuild shattered communities.</p>",
         "description": "<p>Helped build and deploy the new DEC website, a mobile-friendly project focused on raising awareness for worldwide crisis appeals with a clean design and customized donation process.</p><p>Implemented a content feed for the Appeal pages using <a href='http://embed.ly/' target='_blank'>Embed.ly</a>, fetching relevant content from several sources including Twitter, Facebook and YouTube. Also created a custom Donation workflow integrating <a href='https://stripe.com/' target='_blank'>Stripe's</a> API for payment processing.</p>",
         "itemDetails": {
           "client": {
@@ -75,7 +75,7 @@
         "title": "Moon Jamaica",
         "categories": "Commerce, Drupal, PHP",
         "introText": "<p>The Moon Jamaica website started as a digital version of it's older brother, the Moon Jamaica guide book, as a way to easily keep the contents up-to-date and provide a pleasant experience for the users. It is also a booking website, listing all the hotels, rental car and events available in the guide book.</p>",
-        "description": "<p>This website was built using Drupal with the Commerce modules to habdle all the booking and store functionalities. Working as a consultant, I am trying to recreate and optimise the most important features built in the site, as well as improving the user experience of the overall website.</p>",
+        "description": "<p>This website was built using Drupal with the Commerce modules to handle all the booking and store functionalities. Working as a consultant, I am trying to recreate and optimise the most important features built in the site, as well as improving the user experience of the overall website.</p>",
         "itemDetails": {
           "client": {
             "title": "Client",

@@ -641,6 +641,9 @@ fieldset[disabled] .btn-success.active {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+.body-wrapper.modal-open {
+  overflow: hidden !important;
+}
 .sidebar-wrapper {
   height: 100%;
   background: #16a085;

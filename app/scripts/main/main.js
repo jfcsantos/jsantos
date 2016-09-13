@@ -72,9 +72,6 @@ angular.module('yoAngularApp')
       };
 
     }]);
-
-    // Please note that the close and dismiss bindings are from $uibModalInstance.
-
     angular.module('yoAngularApp').component('modalComponent', {
       templateUrl: 'myModalContent.html',
       bindings: {
