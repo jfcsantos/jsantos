@@ -9,5 +9,57 @@
         </div>
         <img ng-src="{{work.imageUrl}}" class="img-responsive" alt="{{work.name}}"/>
     </a>
-    <a href="#portfolioModal{{workId}}" title="{{work.name}}" class="portfolio-item-title row">{{work.name}}</a>
+    <a href="#/" title="{{work.name}}" class="portfolio-item-title row"
+        ng-click="showDialog($event, 'portfolioModal' + workId)">{{work.name}}</a>
 </div>
+
+<div style="visibility: hidden">
+    <div class="md-dialog-container" id="portfolioModal1">
+      <md-dialog>
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <div class="modal-title">
+                  <h2>CRUK Fundraising Platform</h2>
+                  <div>fundraise, charity, Drupal, PHP</div>
+                </div>
+                <div class="project-intro-text text-left">
+                  <p>The new fundraising platform created in-house by Cancer Research UK aims to provide a seamless, free and enjoyable way of creating <a href="https://fundraise.cancerresearchuk.org/e-lions" target="_blank">Fundraising Pages</a>.</p>
+                </div>
+                <div class="modal-cover-img-wrapper">
+                  <img src="images/portfolio/cruk-fundraise.png" class="img-responsive   img-centered" alt="">
+                </div>
+                <div class="modal-project-details row">
+                  <div class="col-sm-4">
+                    <ul class="list-inline item-details">
+                      <li>Client:
+                        <strong>Cancer Research UK</strong>
+                      </li>
+                      <li>Website:
+                        <strong><a href="https://fundraise.cancerresearchuk.org/" target="_blank">fundraise.cancerresearchuk.org</a>
+                        </strong>
+                      </li>
+                      <li>Date:
+                        <strong>June 2016</strong>
+                      </li>
+                      <li>Categories:
+                        <strong>fundraise, charity, Drupal, PHP</strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-8">
+                    <p>Together with the digital team at CRUK, I led the development of this Drupal based project. The platform uses a mix of both Drupal 7 with custom built Symphony Web Services serving the required contents and assets to the user.</p>
+                    <p>Besides the ability to personalize the page, the main feature built is the Donation feed. This list of past donations and messages left by contributors is part of the integration with CRUK's donation and payment processing services.</p>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
+            </div>
+      </md-dialog>
+    </div>
+  </div>
