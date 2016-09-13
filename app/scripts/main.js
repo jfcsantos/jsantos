@@ -71,8 +71,8 @@ angular.module('yoAngularApp')
 
       };
 
-    }]);
-    angular.module('yoAngularApp').component('modalComponent', {
+    }])
+    .component('modalComponent', {
       templateUrl: 'myModalContent.html',
       bindings: {
         resolve: '<',

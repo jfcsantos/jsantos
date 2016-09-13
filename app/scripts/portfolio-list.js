@@ -2,7 +2,7 @@
 
 angular.module('portfolioList', ['common.portfolio', 'ngMaterial'])
   .component('portfolioList', {
-    templateUrl: 'scripts/portfolio-list/portfolio-list.template.html',
+    templateUrl: 'views/portfolio-list.template.html',
     controller: ['Portfolio', '$scope', '$mdDialog',
       function PortfolioListController(Portfolio, $scope, $mdDialog) {
         $scope.portfolio = Portfolio.query();

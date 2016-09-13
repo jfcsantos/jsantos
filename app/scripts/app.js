@@ -23,7 +23,7 @@ angular
     // $locationProvider.hashPrefix('!');
     $routeProvider
       .when('/', {
-        templateUrl: 'scripts/main/main.template.html',
+        templateUrl: 'views/main.template.html',
         controller: 'MainController',
         controllerAs: 'main'
       })

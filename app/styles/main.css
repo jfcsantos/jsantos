@@ -652,6 +652,9 @@ fieldset[disabled] .btn-success.active {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;*/
 }
+.nav-sidebar {
+  overflow: hidden;
+}
 /* Sidebar Styles */
 .sidebar-nav {
   top: 0;
