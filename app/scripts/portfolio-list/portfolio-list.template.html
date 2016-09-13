@@ -1,0 +1,13 @@
+<div ng-repeat="work in portfolio"
+      ng-init="workId=getWorkId()"
+      class="col-sm-4 portfolio-item"  >
+    <a href="#portfolioModal{{workId}}" class="portfolio-link row" data-toggle="modal">
+        <div class="caption">
+            <div class="caption-content">
+                <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+        </div>
+        <img ng-src="{{work.imageUrl}}" class="img-responsive" alt="{{work.name}}"/>
+    </a>
+    <a href="#portfolioModal{{workId}}" title="{{work.name}}" class="portfolio-item-title row">{{work.name}}</a>
+</div>

@@ -1,0 +1,38 @@
+[
+    {
+        "id": "cruk-fundraise",
+        "imageUrl": "images/portfolio/cruk-fundraise.png",
+        "name": "CRUK Fundraising",
+        "snippet": "The new fundraising platform created in-house by Cancer Research UK aims to provide a seamless, free and enjoyable way of creating Fundraising Pages."
+    },
+    {
+        "id": "dec-org",
+        "imageUrl": "images/portfolio/dec-org.png",
+        "name": "Disasters Emergency Committee",
+        "snippet": "The Moon Jamaica website started as a digital version of it's older brother, the Moon Jamaica guide book, as a way to easily keep the contents up-to-date and provide a pleasant experience for the users. It is also a booking website, listing all the hotels, rental car and events available in the guide book."
+    },
+    {
+        "id": "theatre-people",
+        "imageUrl": "images/portfolio/theatre-people.png",
+        "name": "Theatre People",
+        "snippet": "The Moon Jamaica website started as a digital version of it's older brother, the Moon Jamaica guide book, as a way to easily keep the contents up-to-date and provide a pleasant experience for the users. It is also a booking website, listing all the hotels, rental car and events available in the guide book."
+    },
+    {
+        "id": "moon-jamaica",
+        "imageUrl": "images/portfolio/moonjamaica.png",
+        "name": "Moon Jamaica",
+        "snippet": "The Moon Jamaica website started as a digital version of it's older brother, the Moon Jamaica guide book, as a way to easily keep the contents up-to-date and provide a pleasant experience for the users. It is also a booking website, listing all the hotels, rental car and events available in the guide book."
+    },
+    {
+        "id": "esn-lisboa",
+        "imageUrl": "images/portfolio/esn-lisboa.png",
+        "name": "ESN Lisboa",
+        "snippet": "The Moon Jamaica website started as a digital version of it's older brother, the Moon Jamaica guide book, as a way to easily keep the contents up-to-date and provide a pleasant experience for the users. It is also a booking website, listing all the hotels, rental car and events available in the guide book."
+    },
+    {
+        "id": "tkb-fct",
+        "imageUrl": "images/portfolio/tkb-fct.png",
+        "name": "TKB FCT",
+        "snippet": "The Moon Jamaica website started as a digital version of it's older brother, the Moon Jamaica guide book, as a way to easily keep the contents up-to-date and provide a pleasant experience for the users. It is also a booking website, listing all the hotels, rental car and events available in the guide book."
+    }
+]

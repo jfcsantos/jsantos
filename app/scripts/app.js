@@ -15,13 +15,14 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngMaterial'
+    'ngMaterial',
+    'portfolioList'
   ])
   .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     // $locationProvider.hashPrefix('!');
     $routeProvider
       .when('/', {
-        templateUrl: 'views/portfolio.template.html',
+        templateUrl: 'scripts/main/main.template.html',
         controller: 'MainController',
         controllerAs: 'main'
       })
