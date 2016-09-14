@@ -1,8 +1,8 @@
 'use strict';
 
-angular.module('portfolioList', ['common.portfolio', 'ngMaterial'])
+angular.module('portfolioList', ['shared.portfolio', 'ngMaterial'])
   .component('portfolioList', {
-    templateUrl: 'scripts/portfolio-list/portfolio-list.template.html',
+    templateUrl: 'components/portfolio-list/portfolio-list.template.html',
     controller: ['Portfolio', '$scope', '$mdDialog',
       function PortfolioListController(Portfolio, $scope, $mdDialog) {
         $scope.portfolio = Portfolio.query();

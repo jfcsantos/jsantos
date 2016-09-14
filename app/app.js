@@ -17,18 +17,19 @@ angular
     'ngSanitize',
     'ngMaterial',
     'ui.bootstrap',
-    'portfolioList'
+    'portfolioList',
+    'shared'
   ])
   .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     // $locationProvider.hashPrefix('!');
     $routeProvider
       .when('/', {
-        templateUrl: 'scripts/main/main.template.html',
+        templateUrl: 'components/main/main.template.html',
         controller: 'MainController',
         controllerAs: 'main'
       })
       .when('/about', {
-        templateUrl: 'views/about.template.html',
+        templateUrl: 'components/about/about.template.html',
         controller: 'AboutController',
         controllerAs: 'about'
       })

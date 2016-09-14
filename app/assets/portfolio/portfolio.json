@@ -1,7 +1,7 @@
 [
     {
         "id": "cruk-fundraise",
-        "imageUrl": "images/portfolio/cruk-fundraise.png",
+        "imageUrl": "assets/img/portfolio/cruk-fundraise.png",
         "name": "CRUK Fundraising",
         "title": "CRUK Fundraising Platform",
         "categories": "fundraise, charity, Drupal, PHP",
@@ -24,7 +24,7 @@
     },
     {
         "id": "dec-org",
-        "imageUrl": "images/portfolio/dec-org.png",
+        "imageUrl": "assets/img/portfolio/dec-org.png",
         "name": "Disasters Emergency Committee",
         "title": "Disasters Emergency Committee",
         "categories": "fundraise, charity, Drupal, PHP, Stripe, Embedly",
@@ -47,7 +47,7 @@
     },
     {
         "id": "theatre-people",
-        "imageUrl": "images/portfolio/theatre-people.png",
+        "imageUrl": "assets/img/portfolio/theatre-people.png",
         "name": "Theatre People",
         "title": "Theatre People",
         "categories": "eCommerce, Bookings, Drupal, PHP, Python",
@@ -70,7 +70,7 @@
     },
     {
         "id": "moon-jamaica",
-        "imageUrl": "images/portfolio/moonjamaica.png",
+        "imageUrl": "assets/img/portfolio/moonjamaica.png",
         "name": "Moon Jamaica",
         "title": "Moon Jamaica",
         "categories": "Commerce, Drupal, PHP",
@@ -93,7 +93,7 @@
     },
     {
         "id": "esn-lisboa",
-        "imageUrl": "images/portfolio/esn-lisboa.png",
+        "imageUrl": "assets/img/portfolio/esn-lisboa.png",
         "name": "ESN Lisboa",
         "title": "ESN Lisboa",
         "categories": "Drupal, PHP, Volunteering, NPO",
@@ -116,7 +116,7 @@
     },
     {
         "id": "tkb-fct",
-        "imageUrl": "images/portfolio/tkb-fct.png",
+        "imageUrl": "assets/img/portfolio/tkb-fct.png",
         "name": "TKB FCT",
         "title": "TKB Multimedia Archive",
         "categories": "Drupal, PHP, D3.js",

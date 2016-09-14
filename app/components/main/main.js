@@ -15,27 +15,7 @@ angular.module('yoAngularApp')
        };
       }
       $scope.toggleLeft = buildToggler('left');
-
     }])
-    .directive('myNavMenu', function() {
-      return {
-        replace: true,
-        restrict: 'E',
-        scope: {
-            isSidebar: '@',
-        },
-        templateUrl: 'views/sidebar.template.html',
-        link: function (scope, element, attributes) {
-            // var el = angular.element(element);
-            var button = angular.element('#navbar-toggle');
-            var navLink = angular.element('.sidebar-nav a');
-            navLink.on('click', function(){
-               // Actions after the file is selected
-               button.click();
-            });
-        }
-      };
-    })
     .directive('scrollToItem', function() {
       return {
           restrict: 'A',
@@ -72,7 +52,9 @@ angular.module('yoAngularApp')
       };
 
     }]);
-    angular.module('yoAngularApp').component('modalComponent', {
+    
+angular.module('yoAngularApp')
+      .component('modalComponent', {
       templateUrl: 'myModalContent.html',
       bindings: {
         resolve: '<',

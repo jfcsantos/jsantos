@@ -1,7 +1,7 @@
 'use strict';
 
 // Define the `common.portfolio` module
-angular.module('common.portfolio', ['ngResource'])
+angular.module('shared.portfolio', ['ngResource'])
   .factory('Portfolio', ['$resource',
     function($resource) {
       return $resource('assets/portfolio/:workId.json', {}, {

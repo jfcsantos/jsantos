@@ -143,7 +143,7 @@ module.exports = function (grunt) {
       all: {
         src: [
           'Gruntfile.js',
-          '<%= yeoman.app %>/scripts/{,*/}*.js'
+          '<%= yeoman.app %>/{,*/}*.js'
         ]
       },
       test: {
@@ -163,7 +163,7 @@ module.exports = function (grunt) {
       all: {
         src: [
           'Gruntfile.js',
-          '<%= yeoman.app %>/scripts/{,*/}*.js'
+          '<%= yeoman.app %>/{,*/}*.js'
         ]
       },
       test: {
@@ -318,7 +318,7 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: '<%= yeoman.app %>/images',
+          cwd: '<%= yeoman.app %>/assets/img',
           src: '**/*{png,jpg,jpeg,gif}',
           dest: '<%= yeoman.dist %>/images'
         }]
@@ -329,7 +329,7 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: '<%= yeoman.app %>/images',
+          cwd: '<%= yeoman.app %>/assets/img',
           src: '**/*.svg',
           dest: '<%= yeoman.dist %>/images'
         }]
@@ -397,7 +397,7 @@ module.exports = function (grunt) {
           src: [
             '*.{ico,png,txt}',
             '*.html',
-            'images/**/*.{webp}',
+            'assets/img/**/*.{webp}',
             'styles/fonts/**/*.*',
             'assets/**',
             'CNAME'

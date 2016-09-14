@@ -20,7 +20,7 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <!-- endbuild -->
 
     <!-- Custom Fonts -->
@@ -32,20 +32,17 @@
   <body id="page-top" class="index body-wrapper" ng-controller="MainController" ng-cloak>
 
     <!--  Sidebar-->
-    <md-sidenav class="md-sidenav-left"
-                md-component-id="left"
-                 md-whiteframe="4">
-         <my-nav-menu is-sidebar="true" class="sidebar-wrapper"></my-nav-menu>
-
+    <md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="4">
+       <my-nav-menu is-sidebar="true" class="sidebar-wrapper"></my-nav-menu>
      </md-sidenav>
     <div class="content-wrapper">
         <!-- Header -->
-        <header ng-include='"views/header.template.html"'></header>
+        <header ng-include='"components/core/header.template.html"'></header>
         <!-- Portfolio Grid Section -->
         <div ng-view></div>
 
         <!-- Footer -->
-        <footer class="text-center" ng-include='"views/footer.template.html"'></footer>
+        <footer class="text-center" ng-include='"components/core/footer.template.html"'></footer>
 
         <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
         <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
@@ -73,12 +70,13 @@
         <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/common/common.module.js"></script>
-        <script src="scripts/common/portfolio/portfolio.service.js"></script>
-        <script src="scripts/portfolio-list/portfolio-list.js"></script>
-        <script src="scripts/main/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
+        <script src="app.js"></script>
+        <script src="shared/shared.module.js"></script>
+        <script src="shared/portfolio/portfolio.service.js"></script>
+        <script src="shared/sidebar/sidebar.directive.js"></script>
+        <script src="components/portfolio-list/portfolio-list.js"></script>
+        <script src="components/main/main.js"></script>
+        <script src="components/about/about.js"></script>
         <!-- endbuild -->
 
   </body>
