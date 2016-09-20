@@ -4,10 +4,10 @@
 angular.module('shared.portfolio', ['ngResource'])
   .factory('Portfolio', ['$resource',
     function($resource) {
-      return $resource('assets/portfolio/:workId.json', {}, {
+      return $resource('http://localhost:8000/portfolio/:id', {}, {
         query: {
           method: 'GET',
-          params: {workId: 'portfolio'},
+          // params: {workId: ':workId'},
           isArray: true
         }
       });

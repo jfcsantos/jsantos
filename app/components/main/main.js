@@ -30,42 +30,4 @@ angular.module('yoAngularApp')
               });
           }
       };
-    })
-    .controller('ModalDemoCtrl', ['$scope', '$uibModal', function ($scope, $uibModal, $log) {
-      var self = this;
-      self.animationsEnabled = true;
-      self.work = $scope.work;
-
-      self.openComponentModal = function () {
-        var modalInstance = $uibModal.open({
-          // animation: false,
-          backdrop: false,
-          windowClass: 'full-screen',
-          component: 'modalComponent',
-          resolve: {
-            work: function () {
-              return self.work;
-            }
-          }
-        });
-
-      };
-
-    }]);
-    
-angular.module('yoAngularApp')
-      .component('modalComponent', {
-      templateUrl: 'myModalContent.html',
-      bindings: {
-        resolve: '<',
-        close: '&',
-        dismiss: '&'
-      },
-      controller: function () {
-        var self = this;
-        self.$onInit = function () {
-          self.work = self.resolve.work;
-        };
-      },
-      controllerAs: 'modalContent'
     });

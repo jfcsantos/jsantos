@@ -1,0 +1,34 @@
+<!-- Portfolio Modals -->
+<div class="container portfolio-modal">
+  <div class="close-modal"  ng-click="modalContent.dismiss()">
+    <div class="lr">
+      <div class="rl">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+      <div class="modal-body">
+        <div class="modal-title">
+          <h2>{{modalContent.work.title}}</h2>
+          <div>{{modalContent.work.categories}}</div>
+        </div>
+        <div class="project-intro-text text-left" ng-bind-html="modalContent.work.introText"></div>
+        <div class="modal-cover-img-wrapper">
+          <img ng-src="{{modalContent.work.imageUrl}}" class="img-responsive   img-centered" alt="">
+        </div>
+        <div class="modal-project-details row">
+          <div class="col-sm-4">
+            <ul class="list-inline item-details">
+              <li ng-repeat="item in modalContent.work.itemDetails">
+                <span class="item-title">{{item.title}}:</span>
+                <strong  ng-bind-html="item.content"></strong>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-8" ng-bind-html="modalContent.work.description"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
