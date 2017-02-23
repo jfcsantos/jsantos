@@ -1,16 +1,15 @@
 <div  ng-repeat="work in portfolio"
       class="col-sm-4 portfolio-item">
   <div ng-controller="ModalDemoCtrl as modal">
-
     <a href="#/" class="portfolio-link row" ng-click="modal.openComponentModal()">
         <div class="caption">
             <div class="caption-content">
                 <i class="fa fa-search-plus fa-3x"></i>
             </div>
         </div>
-        <img ng-src="{{work.imageUrl}}" class="img-responsive" alt="{{work.name}}"/>
+        <img ng-src="{{work.field_image_url}}" class="img-responsive" alt="{{work.field_project_name}}"/>
     </a>
-    <a href="#/" title="{{work.name}}" class="portfolio-item-title row"
-        ng-click="modal.openComponentModal()">{{work.name}}</a>
+    <a href="#/" title="{{work.field_project_name}}" class="portfolio-item-title row"
+        ng-click="modal.openComponentModal()">{{work.field_project_name}}</a>
   </div>
 </div>

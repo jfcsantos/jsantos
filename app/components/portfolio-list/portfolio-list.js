@@ -5,8 +5,13 @@ angular.module('portfolioList', ['shared.portfolio', 'ngMaterial'])
     templateUrl: 'components/portfolio-list/portfolio-list.template.html',
     controller: ['Portfolio', '$scope', '$mdDialog',
       function PortfolioListController(Portfolio, $scope, $mdDialog) {
-        $scope.portfolio = Portfolio.query();
-        $scope.workId = 0;
+        var portfolio = Portfolio.query();
+        portfolio.$promise.then(function (result) {
+          console.log(result);
+          $scope.portfolio = result;
+        });
+
+        $scope.workId = 1;
 
         $scope.getWorkId = function () {
           $scope.workId += 1;
@@ -21,7 +26,11 @@ angular.module('portfolioList', ['shared.portfolio', 'ngMaterial'])
   self.animationsEnabled = true;
 
   self.openComponentModal = function () {
-    self.work = Portfolio.query({id: $scope.workId});
+      var work = Portfolio.query({id: $scope.workId});
+      work.$promise.then(function (result) {
+        console.log(result);
+        self.work = result;
+      });
 
     var modalInstance = $uibModal.open({
       // animation: false,
